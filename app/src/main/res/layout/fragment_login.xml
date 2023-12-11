@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.fragments.login.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/loginBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="50dp"
+            style="@style/card_login_style"
+            app:cardCornerRadius="@dimen/normal_card_radius"
+            app:cardElevation="0dp"
+            app:strokeWidth="2dp">
+
+            <EditText
+                android:id="@+id/login"
+                style="@style/edit_text_login_style"
+                android:hint="@string/login" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="@dimen/normal_card_radius"
+            app:cardElevation="0dp"
+            app:strokeWidth="2dp"
+            style="@style/card_login_style">
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/edit_text_login_style"
+                android:inputType="textPassword"
+                android:gravity="center"
+                android:hint="@string/password" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="@dimen/normal_card_radius"
+            android:layout_marginTop="50dp"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loginProgress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@id/loginBox"
+        app:layout_constraintBottom_toBottomOf="@id/loginBox"
+        app:layout_constraintEnd_toEndOf="@id/loginBox"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

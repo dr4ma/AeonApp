@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AeonApp</string>
+    <string name="cancel">Cancel</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="some_field_is_empty">Some field is empty</string>
+    <string name="incorrect_login_or_password">Incorrect login or password</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="payments">Payments</string>
+    <string name="no_payments">No payments</string>
+</resources>
